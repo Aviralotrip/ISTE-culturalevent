@@ -297,7 +297,7 @@ nav{
     }
     .container{
    
-       
+      margin-right:2.6rem;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr ;
