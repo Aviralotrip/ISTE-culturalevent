@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comme:wght@100&family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="formstyle.css">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ISTE form</title>
 </head>
 <body>
@@ -20,40 +25,42 @@
         <ul>
         
           <li><a href="index.html">Home</a></li>
-         
-          <li><a href="form.html">Buy Tickets</a></li>
           
+          <li><a href="form.html">Buy Tickets</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
           
         </ul>
       </nav>
     <section class="contact" id="contact">
-        <form action="" id="contactForm">
-          <div class="contact-content" data-aos="flip-left" >
-            <div class="text">Get Your Ticket</div>
-            <div class="contact-name">
-              <input type="text" name="firstname" id="firstname"  placeholder="First Name"/>
-              <input type="text" name="lastname" id="lastname"  placeholder="Last Name" />
+        <form action="iste_data.js" id="user-details">
+            <div class="alert">Registered Successfully</div>
+          <div class="user-data" data-aos="flip-left" >
+            <div class="text">Get In Touch </div>
+            <div class="user-name">
+              <input type="text"  id="first-name"  placeholder="first name"/>
+              <input type="text"  id="last-name"  placeholder="last name" />
             </div>
-            <div class="contact-details">
-                <input type="email" name="email" id="email"  placeholder="Working Email"/>
-              <input type="number" placeholder="Contact Number" />
+            <div class="user-info">
+                <input type="email"  id="email"  placeholder="Working Email"/>
+              <input type="number" id="contact-number" placeholder="contact Number" />
             </div>
-            <div class="address">
-                <textarea name="address" id="address" cols="30" rows="2" placeholder="City"></textarea>
+            <div class="user-address">
+                <textarea  id="address" cols="30" rows="2" placeholder="City"></textarea>
             </div>
-            <div class="message">
-              <textarea name="message" id="message" cols="30" rows="5"placeholder="Type your Message here"></textarea>
+            <div class="user-message">
+              <textarea  id="user-msg" cols="30" rows="5"placeholder="Type your Message here"></textarea>
             </div>
            
             <div class="submit">
-                <button type="submit" id="submit">BUY NOW</button>
+                <button type="submit" id="submit">Buy Now</button>
             </div>
-            <div class="thanks"><p>Thanks for Buying</p></div>
+            
           </div>
           
         </form>
       </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+      <script src="iste_data.js"></script>
+      <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-<script src="script.js"></script>
 </html>

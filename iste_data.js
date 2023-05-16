@@ -1,13 +1,14 @@
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDNZsrHtq706Rc0xrryFbNqLQcqust3sQ0",
-    authDomain: "iste-task.firebaseapp.com",
-    databaseURL: "https://iste-task-default-rtdb.firebaseio.com",
-    projectId: "iste-task",
-    storageBucket: "iste-task.appspot.com",
-    messagingSenderId: "781954682549",
-    appId: "1:781954682549:web:ddf4c22df1fdd91c5178fc",
-    measurementId: "G-BVDVGTSMLG"
-};
+    apiKey: "AIzaSyAxA-YU-Ny0N5YpOsDgQmfzFnQ7zSL-AgM",
+    authDomain: "project-iste.firebaseapp.com",
+    databaseURL: "https://project-iste-default-rtdb.firebaseio.com",
+    projectId: "project-iste",
+    storageBucket: "project-iste.appspot.com",
+    messagingSenderId: "1076907209539",
+    appId: "1:1076907209539:web:27674096f51c31910ab5f6",
+    measurementId: "G-HZPCHP7JLM"
+  };
 // initialize firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -16,8 +17,8 @@ var contactFormDB = firebase.database().ref("Iste Applicants");
 document.getElementById("user-details").addEventListener("submit", submitForm);
 function submitForm(e) {
     e.preventDefault();
-    var first_name = getElementVal("firstname");
-    var last_name = getElementVal("lastname");
+    var first_name = getElementVal("first-name");
+    var last_name = getElementVal("last-name");
     var emailid = getElementVal("email");
     var contact_number = getElementVal("contact-number");
     var address = getElementVal("address");
